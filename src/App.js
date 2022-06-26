@@ -4,6 +4,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Info from './components/pages/Info';
 import SignUp from './components/pages/SignUp';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
       <Route path='/info' exact element={<Info/>} />
       <Route path='/sign-up' exact element={<SignUp/>} />
     </Routes>
+    <Footer />
   </Router>
-  
   </>
   );
 }
