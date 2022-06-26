@@ -54,6 +54,13 @@ video {
     font-size: 70px;
     margin-top: -150px;
   }
+
+  .hero-container > h2 {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 10px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -62,6 +69,11 @@ video {
     margin-top: -100px;
   }
 
+  .hero-container > h2 {
+    color: #fff;
+    font-size: 35px;
+    margin-top: 10px;
+  }
   .hero-container > p {
     font-size: 30px;
   }
@@ -73,5 +85,20 @@ video {
 
   .btn {
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 40px;
+  }
+
+  .hero-container > h2 {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .hero-container > p {
+    font-size: 20px;;
   }
 }

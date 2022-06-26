@@ -171,6 +171,10 @@
   .social-media-wrap {
     flex-direction: column;
   }
+
+  .logo {
+    width: 15vw;
+  }
 }
 
 @media screen and (max-width: 768px) {

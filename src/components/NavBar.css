@@ -79,9 +79,12 @@
   .NavbarItems {
     position: relative;
   }
+  .navbar {
+    justify-content: flex-start;
+  }
 
   .navbar-logo img {
-    width: 7vw;
+    width: 16vw;
   }
 
   .nav-menu {
@@ -118,12 +121,7 @@
     border-radius: 0;
   }
 
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  }
+
 
   .menu-icon {
     display: block;
@@ -159,5 +157,12 @@
     background: #fcfbfa;
     color: rgba(0, 187, 209, 1);
     transition: 250ms;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar-logo img {
+      width: 30vw;
+    }
+  
   }
 }
