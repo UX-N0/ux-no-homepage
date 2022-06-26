@@ -1,20 +1,25 @@
+import './App.css'
 import NavBar from './components/NavBar';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Info from './components/pages/Info';
+import SignUp from './components/pages/SignUp';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (<>
-  <NavBar />
-  <div className='container'>
-    <h1>What is UX-NO</h1>
-    <p> UX-NO is a web app inspired by recent events, that aims to provide the public with necessary information about the dangers of UXO's. UXO's are unexploded ordinance that are left over from conflict zones. This UXO's pose a threat to the general public once the area has been de-ocupied or the conflict has ended. </p>
-  </div>
-  <div className='container'>
-    <h2> Why is this app important</h2>
-    <p> This app is important to help the people that go back to their normal lives once a conflict has ended. This app will provide information on safety and the ability to report UXO's so that the local authorities can deal safely with the UXO.</p>
-  </div>
-  <div className='container'>
-    <h2>Contact:</h2>
-  </div>
-</>
+  return (
+  <>
+  <Router >
+    <NavBar />
+    <Routes >
+      <Route path='/' exact element={<Home />} />
+      <Route path='/about' exact element={<About/>} />
+      <Route path='/info' exact element={<Info/>} />
+      <Route path='/sign-up' exact element={<SignUp/>} />
+    </Routes>
+  </Router>
+  
+  </>
   );
 }
 
